@@ -13,7 +13,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 #sidebar{
-    width: 75%;
+    width: 17%;
     height: 100%;
     background-color: hsl(243, 100%, 62%);
     background-image: url('./assets/images/bg-sidebar-desktop.svg');
@@ -45,4 +45,14 @@ body{
 .gray{
     color: hsl(231, 11%, 63%);
     font-size: 14px;
+}
+#form{
+    height: 100%;
+    padding: 55px;
+}
+.hidden{
+    display: none;
+}
+.end{
+    margin-left: auto;
 }
