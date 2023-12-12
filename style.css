@@ -16,7 +16,7 @@ body{
 }
 .container{
     /* width:60%; */
-    height: 75%;
+    /* height: 75%; */
     display: flex;
     background-color: white;
     border-radius: 20px;
@@ -69,7 +69,7 @@ form{
     display: flex;
     justify-content: space-between;
 }
-#go_back{
+.go_back{
     text-decoration: underline;
     color: hsl(231, 11%, 63%);;
 }
@@ -82,7 +82,7 @@ form{
     margin: 10px 0px;
     color:hsl(231, 11%, 63%);
 }
-input{
+#name,#email,#phone{
     display: block;
     width: 100%;
     height: 45px;
@@ -108,11 +108,19 @@ button{
     display: flex;
     margin: 10px 0px;
     padding: 10px;
+    justify-content: space-around;
 }
 .options_img{
-    /* padding: 10px; */
     margin-right: 10px;
 }
 .options_name{
     font-weight: 700;
+}
+.options_price{
+    display: flex;
+    align-items: center;
+    color: purple;
+}
+input[type="checkbox"]{
+    transform: scale(1.5);
 }

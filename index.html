@@ -94,7 +94,7 @@
       </div>
 
     <div class="end">
-      <button>Next Step</button>
+      <button style="margin-left: auto;">Next Step</button>
     </div>
 
   </form>
@@ -102,7 +102,7 @@
     <!-- Step 1 end -->
 
     <!-- Step 2 start -->
-    <form id="form-2">
+    <form id="form-2" class="hidden">
 
   <div class="head">Select your plan</div>
   <div class="sub-heading">You have the option of monthly or yearly billing.</div>
@@ -141,7 +141,7 @@
   </div>
 
   <div class="end">
-    <span id="go_back">Go Back</span>
+    <span class="go_back">Go Back</span>
     <button> Next Step</button>
   </div>
 
@@ -149,25 +149,52 @@
     <!-- Step 2 end -->
 
     <!-- Step 3 start -->
-    <form id="form-3" class="hidden">
+    <form id="form-3">
 
       <div class="head">Pick add-ons</div>
       <div class="sub-heading">Add-ons help enhance your gaming experience.</div>
 
-  Online service
-  Access to multiplayer games
-  +$1/mo
+  <div class="option">
 
-  Larger storage
-  Extra 1TB of cloud save
-  +$2/mo
+    <input type="checkbox" name="" id="">
 
-  Customizable Profile
-  Custom theme on your profile
-  +$2/mo
+    <div>
+      <div class="options_name">Online service</div>
+      <div class="gray">Access to multiplayer games</div>
+    </div>
 
-  <div>
-    <button class="end"> Go Back  </button>
+    <div class="options_price">+$1/mo</div>
+
+  </div>
+
+  <div class="option">
+
+    <input type="checkbox" name="" id="">
+
+    <div>
+      <div class="options_name">Larger storage</div>
+      <div class="gray">Extra 1TB of cloud save</div>
+    </div>
+
+    <div class="options_price">+$2/mo</div>
+    
+  </div>
+
+  <div class="option">
+
+    <input type="checkbox" name="" id="">
+
+    <div>
+      <div class="options_name">Customizable Profile</div>
+      <div class="gray">Custom theme on your profile</div>
+    </div>
+
+    <div class="options_price">+$2/mo</div>
+    
+  </div>
+
+  <div class="end">
+    <span class="go_back"> Go Back </span>
     <button> Next Step</button>
   </div>
 
@@ -185,8 +212,8 @@
     
       Total (per month/year)
     
-      <div>
-        <button class="end"> Go Back  </button>
+      <div class="end">
+        <button > Go Back  </button>
         <button> Confirm</button>
       </div>
 
