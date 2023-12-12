@@ -15,7 +15,7 @@ body{
     background-color: hsl(206, 94%, 87%);
 }
 .container{
-    width:60%;
+    /* width:60%; */
     height: 75%;
     display: flex;
     background-color: white;
@@ -54,18 +54,24 @@ body{
     color: hsl(231, 11%, 63%);
     font-size: 14px;
 }
-#form{
+form{
+    display: flex;
     height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 55px;
-    position: relative;
+    padding-bottom: 0px;
 }
 .hidden{
     display: none;
 }
 .end{
-    position: absolute;
-    bottom: 55px;
-    right: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+#go_back{
+    text-decoration: underline;
+    color: hsl(231, 11%, 63%);;
 }
 .head{
     font-size: 30px;
@@ -84,6 +90,7 @@ input{
     border-color: hsl(231, 11%, 63%);
     margin-top: 5px;
     font-size: 16px;
+    padding: 5px 10px;
 }
 form>div{
     margin: 20px 0px;
@@ -93,4 +100,19 @@ button{
     background-color: hsl(213, 96%, 18%);
     color: white;
     border-radius: 10px;
+}
+
+.option{
+    border: 1px solid hsl(228, 7%, 86%);
+    border-radius: 10px;
+    display: flex;
+    margin: 10px 0px;
+    padding: 10px;
+}
+.options_img{
+    /* padding: 10px; */
+    margin-right: 10px;
+}
+.options_name{
+    font-weight: 700;
 }
