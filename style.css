@@ -43,6 +43,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 .step_text{
     margin-left: 20px;
@@ -75,7 +76,7 @@ form{
 }
 .head{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 500;
     margin: 10px 0px;
 }
 .sub-heading{
@@ -110,13 +111,20 @@ button{
     padding: 10px;
     justify-content: space-around;
 }
-.options_img{
+.option_img{
     margin-right: 10px;
 }
-.options_name{
+.option_text{
+width: 80%;
+}
+.option_text2{
+width: 60%;
+}
+
+.option_name{
     font-weight: 700;
 }
-.options_price{
+.option_price{
     display: flex;
     align-items: center;
     color: purple;
