@@ -17,7 +17,7 @@
   <div id="sidebar">
 
     <div class="step" style="margin-top: 70px;">
-      <button class="step_number white">1</button>
+      <button class="step_number white" onclick="go_to_form(1)">1</button>
 
       <div class="step_text">
 
@@ -30,7 +30,7 @@
 
     <div class="step">
 
-      <button class="step_number white">2</button>
+      <button class="step_number white" onclick="go_to_form(2)">2</button>
 
       <div class="step_text">   
 
@@ -43,7 +43,7 @@
 
     <div class="step">
 
-      <button class="step_number white">3</button>
+      <button class="step_number white" onclick="go_to_form(3)">3</button>
 
       <div class="step_text">   
 
@@ -55,7 +55,7 @@
     </div>
     <div class="step">
 
-      <button class="step_number white">4</button>
+      <button class="step_number white" onclick="go_to_form(4)">4</button>
 
       <div class="step_text">   
 
@@ -73,7 +73,7 @@
 
       <!-- Step 1 start -->
 
-    <form id="form_1" class="hidden">
+    <form id="form-1">
 
         <div class="head">Personal info</div>
         <div class="sub-heading">Please provide your name, email address, and phone number.</div>
@@ -94,7 +94,7 @@
       </div>
 
     <div class="end">
-      <button style="margin-left: auto;">Next Step</button>
+      <button style="margin-left: auto;" onclick="submit_form(1)">Next Step</button>
     </div>
 
   </form>
@@ -141,15 +141,15 @@
   </div>
 
   <div class="end">
-    <span class="go_back">Go Back</span>
-    <button> Next Step</button>
+    <span class="go_back" onclick="go_to_form(1)">Go Back</span>
+    <button onclick="go_to_form(2)"> Next Step</button>
   </div>
 
     </form>
     <!-- Step 2 end -->
 
     <!-- Step 3 start -->
-    <form id="form-3">
+    <form id="form-3" class="hidden">
 
       <div class="head">Pick add-ons</div>
       <div class="sub-heading">Add-ons help enhance your gaming experience.</div>
@@ -194,8 +194,8 @@
   </div>
 
   <div class="end">
-    <span class="go_back"> Go Back </span>
-    <button> Next Step</button>
+    <span class="go_back" onclick="go_to_form(2)"> Go Back </span>
+    <button onclick="go_to_form(3)"> Next Step</button>
   </div>
 
     </form>
@@ -210,11 +210,11 @@
     
       <!-- Dynamically add subscription and add-on selections here -->
     
-      Total (per month/year)
+      <!-- Total (per month/year) -->
     
       <div class="end">
-        <button > Go Back  </button>
-        <button> Confirm</button>
+        <span class="go_back" onclick="go_to_form(3)"> Go Back  </span>
+        <button onclick="go_to_form(4)"> Confirm</button>
       </div>
 
     </form>
@@ -235,6 +235,8 @@
   <!-- Step 5 end -->
   
   </div>
+
+  <script src="./script.js"></script>
 
 </body>
 </html>
